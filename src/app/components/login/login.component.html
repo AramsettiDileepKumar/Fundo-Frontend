@@ -1,0 +1,36 @@
+<form [formGroup]="loginForm" class="login-main-cnt">
+  <span id="login-fundo-sn">Fundoo</span>
+  <span>Sign in</span>
+  <span>Use your fundoo Account</span>
+
+  <mat-form-field class="login-password-ip" appearance="outline">
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email" placeholder="Email" />
+    <mat-error *ngIf="loginControl['email']?.hasError('required')"
+      >Email required</mat-error
+    >
+    <mat-error *ngIf="loginControl['email']?.hasError('email')"
+      >Incorrect Email format</mat-error
+    >
+  </mat-form-field>
+  <div class="login-password-forgetpassword-cnt">
+    <mat-form-field class="login-password-ip" appearance="outline">
+      <mat-label>Password</mat-label>
+      <input matInput formControlName="password" placeholder="Password" />
+      <mat-error *ngIf="loginControl['password']?.hasError('required')"
+        >Password required</mat-error
+      >
+      <mat-error *ngIf="loginControl['password']?.hasError('minlength')"
+        >Password must contains 6 characters</mat-error
+      >
+    </mat-form-field>
+
+    <button mat-button color="primary">Forgot password</button>
+  </div>
+  <div class="login-create-account-login-btn-cnt">
+    <button mat-button color="primary">Create Account</button>
+    <button mat-raised-button (click)="handleLogin()" color="primary">
+      Login
+    </button>
+  </div>
+</form>

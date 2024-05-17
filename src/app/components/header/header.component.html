@@ -1,0 +1,47 @@
+<div class="header-main-cntr">
+  <button
+    class="header-btn-menu"
+    mat-icon-button
+    aria-label="menu"
+    (click)="handleDrawer()"
+  >
+    <mat-icon svgIcon="menu-icon"></mat-icon>
+  </button>
+  <img class="header-img" src="assets\Google_Keep_icon_(2020).svg" />
+  <span class="header-Fundo">Fundo</span>
+  <div class="search-container">
+    <button class="header-btn-menu" mat-icon-button aria-label="menu">
+      <mat-icon svgIcon="search-icon"></mat-icon>
+    </button>
+    <input
+      type="text"
+      placeholder="Search"
+      (input)="handleSearchString()"
+      [(ngModel)]="searchString"
+    />
+  </div>
+  <div class="header-icons-cntr">
+    <button class="header-btn-menu" mat-icon-button aria-label="refresh">
+      <mat-icon svgIcon="refresh-icon"></mat-icon>
+    </button>
+    <button class="header-btn-menu" mat-icon-button aria-label="list">
+      <mat-icon svgIcon="list-view-icon"></mat-icon>
+    </button>
+    <button class="header-btn-menu" mat-icon-button aria-label="settings">
+      <mat-icon svgIcon="settings-icon"></mat-icon>
+    </button>
+  </div>
+  <div class="header-other-account-cntr">
+    <button class="header-btn-menu" mat-icon-button aria-label="other-menu">
+      <mat-icon svgIcon="other-menu-icon"></mat-icon>
+    </button>
+    <div class="header-profile-cntr" [matMenuTriggerFor]="menu">
+      <span>Dk</span>
+    </div>
+    <mat-menu #menu="matMenu">
+      <button class="close-button" (click)="handleLogout()" mat-button>
+        Logout
+      </button>
+    </mat-menu>
+  </div>
+</div>

@@ -1,0 +1,132 @@
+.note-card-main-cntr {
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 250px;
+  padding: 20px;
+  &:hover {
+    .note-card-icon-cntr {
+      visibility: visible;
+    }
+  }
+}
+
+.mat-icon:hover {
+  background-color: rgba(128, 128, 128, 0.393);
+  border-radius: 10px;
+}
+
+.note-card-icon-cntr {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+  visibility: hidden;
+}
+
+.note-card-span {
+  overflow-wrap: break-word;
+}
+
+.color-palate-cnt {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  gap: 5px;
+}
+
+.col1 {
+  background-color: #ffffff;
+  border: 1px solid #000;
+  width: 30px;
+  height: 30px;
+  border-radius: 200px;
+}
+
+.col2 {
+  background-color: #faafa8;
+  border: 1px solid #faafa8;
+  width: 30px;
+  height: 30px;
+  border-radius: 200px;
+}
+
+.col3 {
+  background-color: #f39f76;
+  border: 1px solid #f39f76;
+  width: 30px;
+  height: 30px;
+  border-radius: 200px;
+}
+
+.col4 {
+  background-color: #fff8b8;
+  border: 1px solid #fff8b8;
+  width: 30px;
+  height: 30px;
+  border-radius: 200px;
+}
+
+.col5 {
+  background-color: #e2f6d3;
+  border: 1px solid #e2f6d3;
+  width: 30px;
+  height: 30px;
+  border-radius: 200px;
+}
+
+.col6 {
+  background-color: #b4ddd3;
+  border: 1px solid #b4ddd3;
+  width: 30px;
+  height: 30px;
+  border-radius: 200px;
+}
+
+.col7 {
+  background-color: #d4e4ed;
+  border: 1px solid #d4e4ed;
+  width: 30px;
+  height: 30px;
+  border-radius: 200px;
+}
+
+.col8 {
+  background-color: #aeccdc;
+  border: 1px solid #aeccdc;
+  width: 30px;
+  height: 30px;
+  border-radius: 200px;
+}
+
+.col9 {
+  background-color: #d3bfdb;
+  border: 1px solid #d3bfdb;
+  width: 30px;
+  height: 30px;
+  border-radius: 200px;
+}
+
+.col10 {
+  background-color: #f6e2dd;
+  border: 1px solid #f6e2dd;
+  width: 30px;
+  height: 30px;
+  border-radius: 200px;
+}
+
+.col11 {
+  background-color: #e9e3d4;
+  border: 1px solid #e9e3d4;
+  width: 30px;
+  height: 30px;
+  border-radius: 200px;
+}
+
+.col12 {
+  background-color: #efeff1;
+  border: 1px solid #efeff1;
+  width: 30px;
+  height: 30px;
+  border-radius: 200px;
+}

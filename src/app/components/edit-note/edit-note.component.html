@@ -1,0 +1,51 @@
+<div>
+  <div class="notes-cnt">
+    <input [(ngModel)]="title" type="text" placeholder="Title" />
+    <input [(ngModel)]="description" type="text" placeholder="Take a note..." />
+    <div class="icons">
+      <mat-icon
+        svgIcon="reminder-icon"
+        aria-hidden="false"
+        aria-label="Note SVG icon"
+      ></mat-icon>
+      <mat-icon
+        svgIcon="collaborator-icon"
+        aria-hidden="false"
+        aria-label="Note SVG icon"
+      ></mat-icon>
+      <mat-icon
+        svgIcon="backgroundcolor-icon"
+        aria-hidden="false"
+        aria-label="Note SVG icon"
+      ></mat-icon>
+      <mat-icon
+        svgIcon="img-icon"
+        aria-hidden="false"
+        aria-label="Note SVG icon"
+      ></mat-icon>
+      <mat-icon
+        svgIcon="archive-icon"
+        aria-hidden="false"
+        aria-label="Note SVG icon"
+      ></mat-icon>
+      <mat-icon
+        svgIcon="more-icon"
+        aria-hidden="false"
+        aria-label="Note SVG icon"
+      ></mat-icon>
+      <mat-icon
+        svgIcon="undo-icon"
+        aria-hidden="false"
+        aria-label="Note SVG icon"
+      ></mat-icon>
+      <mat-icon
+        svgIcon="redo-icon"
+        aria-hidden="false"
+        aria-label="Note SVG icon"
+      ></mat-icon>
+      <button class="close-button" mat-button (click)="handleUpdateNote()">
+        Close
+      </button>
+    </div>
+  </div>
+</div>

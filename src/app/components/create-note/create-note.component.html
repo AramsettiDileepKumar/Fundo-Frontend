@@ -1,0 +1,85 @@
+<div
+  class="Note-Container"
+  *ngIf="createNote; else addNote"
+  (click)="handleCreateNote()"
+>
+  <div class="create-note-cntr">
+    <input type="text" placeholder="Take a note..." />
+    <div class="buttons">
+      <button mat-button>
+        <mat-icon
+          svgIcon="tick-icon"
+          aria-hidden="false"
+          aria-label="Note SVG icon"
+        ></mat-icon>
+      </button>
+      <button mat-button>
+        <mat-icon
+          svgIcon="brush-icon"
+          aria-hidden="false"
+          aria-label="Note SVG icon"
+        ></mat-icon>
+      </button>
+      <button mat-button>
+        <mat-icon
+          svgIcon="image-icon"
+          aria-hidden="false"
+          aria-label="Note SVG icon"
+        ></mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
+<ng-template #addNote>
+  <div class="note-container">
+    <div class="note">
+      <div class="header">
+        <input type="text" placeholder="Title" [(ngModel)]="title" />
+        <button mat-icon-button class="pin-icon" aria-label="Pin">
+          <mat-icon svgIcon="pin-icon"></mat-icon>
+        </button>
+      </div>
+      <input
+        type="text"
+        placeholder="Take a note..."
+        [(ngModel)]="description"
+      />
+      <div class="actions">
+        <button mat-icon-button aria-label="Reminder">
+          <mat-icon svgIcon="reminder-icon"></mat-icon>
+        </button>
+
+        <button mat-icon-button aria-label="Collaborator">
+          <mat-icon svgIcon="collab-icon"></mat-icon>
+        </button>
+
+        <button mat-icon-button aria-label="Color Palette">
+          <mat-icon svgIcon="color-icon"></mat-icon>
+        </button>
+        <button mat-icon-button aria-label="Image">
+          <mat-icon svgIcon="image-icon"></mat-icon>
+        </button>
+
+        <button mat-icon-button aria-label="Archive">
+          <mat-icon svgIcon="archieve-icon"></mat-icon>
+        </button>
+
+        <button mat-icon-button aria-label="More">
+          <mat-icon svgIcon="more-icon"></mat-icon>
+        </button>
+
+        <button mat-icon-button aria-label="Undo">
+          <mat-icon svgIcon="undo-icon"></mat-icon>
+        </button>
+
+        <button mat-icon-button aria-label="Redo">
+          <mat-icon svgIcon="redo-icon"></mat-icon>
+        </button>
+
+        <button class="close-btn" mat-flat-button (click)="handleCreateNote()">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</ng-template>
